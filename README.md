@@ -1,6 +1,8 @@
 # Powder
 Website built to showcase the [Jinx Framework](https://github.com/azazelm3dj3d/jinx) using HTML, Tailwind CSS, and Jinx (PHP).
 
+This project will be built in unison with the Jinx Framework to showcase improvements, features, bug fixes, and more as the framework evolves.
+
 ## Usage
 After cloning the repository, all you have to do is install the dependencies and run a local server.
 
