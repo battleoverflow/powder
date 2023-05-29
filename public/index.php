@@ -18,6 +18,9 @@ use powder\models\User;
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 
+$site = SiteController::class;
+$auth = AuthController::class;
+
 // Database config
 $db_config  = [
     'userClass' => User::class,
@@ -32,16 +35,16 @@ $db_config  = [
 $jinx = new Application(dirname(__DIR__), $db_config);
 
 // GET methods
-$jinx->router->get('/', [SiteController::class, 'home']);
-$jinx->router->get('/login', [AuthController::class, 'login']);
-$jinx->router->get('/register', [AuthController::class, 'register']);
-$jinx->router->get('/profile', [AuthController::class, 'profile']);
+$jinx->router->get('/', [$site, 'home']);
+$jinx->router->get('/login', [$auth, 'login']);
+$jinx->router->get('/register', [$auth, 'register']);
+$jinx->router->get('/profile', [$auth, 'profile']);
 
 // TODO: Convert to POST
-$jinx->router->get('/logout', [AuthController::class, 'logout']);
+$jinx->router->get('/logout', [$auth, 'logout']);
 
 // POST methods
-$jinx->router->post('/login', [AuthController::class, 'login']);
-$jinx->router->post('/register', [AuthController::class, 'register']);
+$jinx->router->post('/login', [$auth, 'login']);
+$jinx->router->post('/register', [$auth, 'register']);
 
 $jinx->run();
