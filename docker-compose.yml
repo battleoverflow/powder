@@ -3,7 +3,7 @@ version: "3"
 services:
   app:
     build: ./docker
-    image: azazelm3dj3d/powder
+    image: powder
     ports:
       - "8080:80"
     volumes:
@@ -21,8 +21,7 @@ services:
     environment:
       MYSQL_DATABASE: jinx_db
       MYSQL_ROOT_USER: root
-      MYSQL_ROOT_PASSWORD:
-      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_ROOT_PASSWORD: root
 
 volumes:
   mysql-data:

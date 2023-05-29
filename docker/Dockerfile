@@ -14,7 +14,6 @@ RUN apt-get update && \
 
 # Install PHP Extensions
 RUN docker-php-ext-install zip pdo_mysql
-RUN pecl install -o -f xdebug-3.1.5 && docker-php-ext-enable xdebug
 
 # Copy necessary files
 COPY ./composer.sh ./
@@ -32,9 +31,6 @@ RUN sh ./composer.sh && rm ./composer.sh
 WORKDIR /var/www
 
 RUN chown -R www-data:www-data /var/www
-
-# Run migrations
-RUN php migrations.php
 
 # Start Apache
 CMD ["apache2-foreground"]
