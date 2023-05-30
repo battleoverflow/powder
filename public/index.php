@@ -8,7 +8,7 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use Jinx\Application;
+use Jinx\Jinx;
 
 use powder\controllers\AuthController;
 use powder\controllers\SiteController;
@@ -32,7 +32,7 @@ $db_config  = [
     ]
 ];
 
-$jinx = new Application(dirname(__DIR__), $db_config);
+$jinx = new Jinx(dirname(__DIR__), $db_config, "src/");
 
 // GET methods
 $jinx->router->get('/', [$site, 'home']);

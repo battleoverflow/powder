@@ -9,7 +9,7 @@
 namespace powder\models;
 
 use Jinx\Model;
-use Jinx\Application;
+use Jinx\Jinx;
 
 class Login extends Model
 {
@@ -48,7 +48,7 @@ class Login extends Model
             return false;
         }
 
-        return Application::$jinx->login($find_username);
+        return Jinx::$jinx->login($find_username);
     }
 }
 

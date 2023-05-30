@@ -6,7 +6,7 @@
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
 */
 
-use Jinx\Application;
+use Jinx\Jinx;
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -25,7 +25,7 @@ $db_config  = [
     ]
 ];
 
-$jinx = new Application(__DIR__, $db_config);
+$jinx = new Jinx(__DIR__, $db_config);
 $jinx->db->applyMigrations();
 
 ?>

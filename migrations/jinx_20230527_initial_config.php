@@ -6,7 +6,7 @@
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
 */
 
-use Jinx\Application;
+use Jinx\Jinx;
 
 class jinx_20230527_initial_config
 {
@@ -16,7 +16,7 @@ class jinx_20230527_initial_config
 
     public function up()
     {
-        $db = Application::$jinx->db;
+        $db = Jinx::$jinx->db;
 
         $create_users_table = "CREATE TABLE users (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -36,7 +36,7 @@ class jinx_20230527_initial_config
 
     public function down()
     {
-        $db = Application::$jinx->db;
+        $db = Jinx::$jinx->db;
         $drop_users_table = "DROP TABLE users";
         $db->pdo_handler->exec($drop_users_table);
     }

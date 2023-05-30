@@ -6,7 +6,7 @@
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
 */
 
-use Jinx\Application;
+use Jinx\Jinx;
 
 ?>
 
@@ -33,7 +33,7 @@ use Jinx\Application;
                                 Home
                             </a>
 
-                            <?php if (Application::isGuest()): ?>
+                            <?php if (Jinx::isGuest()): ?>
 
                                 <a href="/register" class="text-white hover:bg-zinc-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">
                                     Register
@@ -50,7 +50,7 @@ use Jinx\Application;
                                 </a>
 
                                 <a href="/profile" class="text-white hover:bg-zinc-700 hover:text-white rounded-md px-3 py-2 text-lg font-medium">
-                                    <?php echo Application::$jinx->user->getUsername(); ?>'s profile
+                                    <?php echo Jinx::$jinx->user->getUsername(); ?>'s profile
                                 </a>
 
                             <?php endif ?>

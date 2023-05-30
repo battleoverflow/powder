@@ -10,7 +10,7 @@ namespace powder\controllers;
 
 use Jinx\Controller;
 use Jinx\Request;
-use Jinx\Application;
+use Jinx\Jinx;
 use Jinx\Response;
 use Jinx\Middleware\AuthMiddleware;
 
@@ -69,7 +69,7 @@ class AuthController extends Controller
             // Only register if all parameters are met and valid
             if ($user_model->validate() && $user_model->save()) {
                 // Redirects to path if registation was successful
-                Application::$jinx->response->redirect('/login');
+                Jinx::$jinx->response->redirect('/login');
                 exit;
             }
 
@@ -94,7 +94,7 @@ class AuthController extends Controller
             Handles logout. When the user logs out, they'll be redirected to the homepage
         */
         
-        Application::$jinx->logout();
+        Jinx::$jinx->logout();
         $response->redirect('/');
     }
 
