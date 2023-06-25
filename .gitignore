@@ -11,3 +11,7 @@ runtime/*
 
 # Environment
 .env
+
+# npm
+package-lock.json
+node_modules/

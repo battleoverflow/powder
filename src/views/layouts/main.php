@@ -17,6 +17,7 @@ use Jinx\Jinx;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/tailwind.css" rel="stylesheet">
     <title>
         <?php echo $this->title; ?>
     </title>
@@ -79,8 +80,6 @@ use Jinx\Jinx;
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>

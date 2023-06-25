@@ -4,6 +4,7 @@ Website built to showcase the [Jinx Framework](https://github.com/azazelm3dj3d/j
 This project will be built in unison with the Jinx Framework to showcase improvements, features, bug fixes, and more as the framework evolves.
 
 ## Usage
+
 After cloning the repository, all you have to do is install the dependencies and run a local server.
 
 First, install the dependencies (Jinx):
