@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Project: Powder (https://github.com/azazelm3dj3d/powder)
+# Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+# License: BSD 2-Clause
+
 function sql_migration {
     if [ -f ".env" ]
     then

@@ -1,9 +1,8 @@
 <?php
 /*
     Project: Powder (https://github.com/azazelm3dj3d/powder)
-    License: BSD 2-Clause
-
     Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    License: BSD 2-Clause
 */
 
 $this->title = "Login";
@@ -46,4 +45,3 @@ $this->title = "Login";
 
     </div>
 </div>
-
