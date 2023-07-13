@@ -9,15 +9,13 @@ namespace powder\controllers;
 
 use Jinx\Controller;
 
-class SiteController extends Controller
-{
+class SiteController extends Controller {
     /*
         Basic controller for rendering static pages
     */
 
     // GET home page
-    public function home()
-    {
+    public function home() {
         $params = [
             'name' => "Powder"
         ];

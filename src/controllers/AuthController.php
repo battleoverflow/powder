@@ -16,18 +16,15 @@ use Jinx\Middleware\AuthMiddleware;
 use powder\models\User;
 use powder\models\Login;
 
-class AuthController extends Controller
-{
-    public function __construct()
-    {
+class AuthController extends Controller {
+    public function __construct() {
         // Restrict pages to only be available if logged in
         $this->registerMiddleware(new AuthMiddleware([
             'profile',
         ]));
     }
 
-    public function login(Request $request, Response $response)
-    {
+    public function login(Request $request, Response $response) {
         /*
             Configures the login page
         */
@@ -54,8 +51,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function register(Request $request)
-    {
+    public function register(Request $request) {
         /*
             Configures the registration page
         */
@@ -87,8 +83,7 @@ class AuthController extends Controller
         ]);
     }
 
-    public function logout(Request $request, Response $response)
-    {
+    public function logout(Request $request, Response $response) {
         /*
             Handles logout. When the user logs out, they'll be redirected to the homepage
         */
@@ -97,8 +92,7 @@ class AuthController extends Controller
         $response->redirect('/');
     }
 
-    public function profile()
-    {
+    public function profile() {
         /*
             Renders the profile page
         */

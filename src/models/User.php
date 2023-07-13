@@ -9,8 +9,7 @@ namespace powder\models;
 
 use Jinx\UserModel;
 
-class User extends UserModel
-{
+class User extends UserModel {
     const STATUS_INACTIVE = 0;
     const STATUS_ACTIVE = 1;
     const STATUS_DELETED = 2;
@@ -27,19 +26,16 @@ class User extends UserModel
     public string $github_username = '';
 
 
-    public static function tableName(): string
-    {
+    public static function tableName(): string {
         // Name of the table in the database
         return 'users';
     }
 
-    public static function primaryKey(): string
-    {
+    public static function primaryKey(): string {
         return 'id';
     }
 
-    public function save()
-    {
+    public function save() {
         $this->status = self::STATUS_INACTIVE;
 
         // Default password hash for user's password
@@ -47,8 +43,7 @@ class User extends UserModel
         return parent::save();
     }
 
-    public function rules(): array
-    {
+    public function rules(): array {
         // Assigns the required constants for inputs
         return [
             'profile_img' => [self::RULE_REQUIRED],
@@ -62,8 +57,7 @@ class User extends UserModel
         ];
     }
 
-    public function attributes(): array
-    {
+    public function attributes(): array {
         return [
             'status',
             'profile_img',
@@ -76,8 +70,7 @@ class User extends UserModel
         ];
     }
 
-    public function labels(): array
-    {
+    public function labels(): array {
         return [
             'profile_img' => 'Profile Image',
             'first_name' => 'First Name',
@@ -90,38 +83,32 @@ class User extends UserModel
         ];
     }
 
-    public function getProfileImg(): string
-    {
+    public function getProfileImg(): string {
         // Collects the user's profile image
         return $this->profile_img;
     }
 
-    public function getName(): string
-    {
+    public function getName(): string {
         // Collects the user's first and last name
         return $this->first_name." ".$this->last_name;
     }
 
-    public function getUsername(): string
-    {
+    public function getUsername(): string {
         // Collects the user's username
         return $this->username;
     }
 
-    public function getEmail(): string
-    {
+    public function getEmail(): string {
         // Collects the user's email
         return $this->email;
     }
 
-    public function getGithubUrl(): string
-    {
+    public function getGithubUrl(): string {
         // Collects the user's GitHub url
         return 'https://github.com/'.$this->github_username;
     }
 
-    public function getGithubUsername(): string
-    {
+    public function getGithubUsername(): string {
         // Collects the user's GitHub username
         return $this->github_username;
     }
