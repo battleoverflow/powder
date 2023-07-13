@@ -25,7 +25,7 @@ $db_config  = [
     ]
 ];
 
-$jinx = new Jinx(__DIR__, $db_config);
+$jinx = new Jinx(__DIR__, $db_config, "src/");
 $jinx->db->applyMigrations();
 
 ?>
