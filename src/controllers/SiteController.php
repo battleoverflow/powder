@@ -1,24 +1,22 @@
 <?php
 /*
-    Project: Powder (https://github.com/azazelm3dj3d/powder)
+    Project: Powder (https://github.com/battleoverflow/powder)
     License: BSD 2-Clause
 
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Author: battleoverflow (https://github.com/battleoverflow)
 */
 
 namespace powder\controllers;
 
 use Jinx\Controller;
 
-class SiteController extends Controller
-{
+class SiteController extends Controller {
     /*
         Basic controller for rendering static pages
     */
 
     // GET home page
-    public function home()
-    {
+    public function home() {
         $params = [
             'name' => "Powder"
         ];

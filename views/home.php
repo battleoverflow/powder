@@ -1,9 +1,9 @@
 <?php
 /*
-    Project: Powder (https://github.com/azazelm3dj3d/powder)
+    Project: Powder (https://github.com/battleoverflow/powder)
     License: BSD 2-Clause
 
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Author: battleoverflow (https://github.com/battleoverflow)
 */
 
 $this->title = "Home";
@@ -19,7 +19,7 @@ $this->title = "Home";
                     💥 <?php echo $name ?> 💥
                 </h1>
                 <p class="mt-6 text-lg leading-8 text-zinc-300">
-                    Powder is a basic website to showcase the abilities of the open source <a href="https://github.com/azazelm3dj3d/jinx" class="text-indigo-500" target="_blank">Jinx Framework</a>.
+                    Powder is a basic website to showcase the abilities of the open source <a href="https://github.com/battleoverflow/jinx" class="text-indigo-500" target="_blank">Jinx Framework</a>.
                 </p>
             </div>
         </div>
@@ -41,7 +41,7 @@ $this->title = "Home";
                         <p class="mt-8 mb-2">Install the Jinx Framework:</p>
 
                         <code class="ring-1 ring-white/10 p-2 bg-white/2 rounded-md">
-                            composer require azazelm3dj3d/jinx
+                            composer require battleoverflow/jinx
                         </code>
 
                         <p class="mt-8">
@@ -49,7 +49,7 @@ $this->title = "Home";
                         </p>
 
                         <div class="mt-10 flex">
-                            <a href="https://github.com/azazelm3dj3d/jinx" class="text-xl font-semibold leading-6 text-indigo-500 hover:underline transition" rel="noreferrer" target="_blank">
+                            <a href="https://github.com/battleoverflow/jinx" class="text-xl font-semibold leading-6 text-indigo-500 hover:underline transition" rel="noreferrer" target="_blank">
                                 Learn more about the Jinx Framework
                                 <span aria-hidden="true">&rarr;</span>
                             </a>

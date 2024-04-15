@@ -1,9 +1,9 @@
 <?php
 /*
-    Project: Powder (https://github.com/azazelm3dj3d/powder)
+    Project: Powder (https://github.com/battleoverflow/powder)
     License: BSD 2-Clause
 
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Author: battleoverflow (https://github.com/battleoverflow)
 */
 
 use Jinx\Application;

@@ -1,9 +1,9 @@
 <?php
 /*
-    Project: Powder (https://github.com/azazelm3dj3d/powder)
+    Project: Powder (https://github.com/battleoverflow/powder)
     License: BSD 2-Clause
 
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Author: battleoverflow (https://github.com/battleoverflow)
 */
 
 namespace powder\models;
@@ -11,29 +11,25 @@ namespace powder\models;
 use Jinx\Model;
 use Jinx\Application;
 
-class Login extends Model
-{
+class Login extends Model {
     public string $username = '';
     public string $password = '';
 
-    public function rules(): array
-    {
+    public function rules(): array {
         return [
             'username' => [self::RULE_REQUIRED],
             'password' => [self::RULE_REQUIRED],
         ];
     }
 
-    public function labels(): array
-    {
+    public function labels(): array {
         return [
             'username' => 'Username',
             'password' => 'Password',
         ];
     }
 
-    public function login()
-    {
+    public function login() {
         $find_username = User::findUser(['username' => $this->username]);
 
         // User username does not exist in the db

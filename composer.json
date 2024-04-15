@@ -1,12 +1,11 @@
 {
-    "name": "azazelm3dj3d/powder",
+    "name": "battleoverflow/powder",
     "description": "Website built to showcase the Powder using HTML, Tailwind CSS, and Jinx (PHP).",
     "type": "project",
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "azazelm3dj3d",
-            "email": "trevor@azazelm3dj3d.com"
+            "name": "battleoverflow"
         }
     ],
     "autoload": {
@@ -15,7 +14,7 @@
         }
     },
     "require": {
-        "azazelm3dj3d/jinx": "^0.1.1",
+        "battleoverflow/jinx": "^0.1.1",
         "vlucas/phpdotenv": "^5.5@dev"
     },
     "minimum-stability": "dev",

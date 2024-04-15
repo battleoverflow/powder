@@ -12,7 +12,7 @@ function powder {
 function complete {
     echo ""
     echo "Docker build should now be complete. You can visit the following URL to interact with the project: http://localhost:8080"
-    echo "If you encountered an error, please create an issue here: https://github.com/azazelm3dj3d/powder/issues"
+    echo "If you encountered an error, please create an issue here: https://github.com/battleoverflow/powder/issues"
     echo ""
 }
 

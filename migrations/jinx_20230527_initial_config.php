@@ -1,21 +1,19 @@
 <?php
 /*
-    Project: Powder (https://github.com/azazelm3dj3d/powder)
+    Project: Powder (https://github.com/battleoverflow/powder)
     License: BSD 2-Clause
 
-    Author: azazelm3dj3d (https://github.com/azazelm3dj3d)
+    Author: battleoverflow (https://github.com/battleoverflow)
 */
 
 use Jinx\Application;
 
-class jinx_20230527_initial_config
-{
+class jinx_20230527_initial_config {
     /*
         This migration is the minimum required to run the Powder example website using the Jinx Framework
     */
 
-    public function up()
-    {
+    public function up() {
         $db = Application::$jinx->db;
 
         $create_users_table = "CREATE TABLE users (
@@ -34,8 +32,7 @@ class jinx_20230527_initial_config
         $db->pdo_handler->exec($create_users_table);
     }
 
-    public function down()
-    {
+    public function down() {
         $db = Application::$jinx->db;
         $drop_users_table = "DROP TABLE users";
         $db->pdo_handler->exec($drop_users_table);
