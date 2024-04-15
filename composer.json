@@ -9,13 +9,19 @@
             "email": "info@azazelm3dj3d.com"
         }
     ],
+    "repositories": [
+        {
+          "type": "path",
+          "url": "/Users/azazel/Documents/GitHub/jinx"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "powder\\": "src/"
         }
     },
     "require": {
-        "azazelm3dj3d/jinx": "^0.1.1",
+        "azazelm3dj3d/jinx": "*",
         "vlucas/phpdotenv": "^5.5@dev"
     },
     "minimum-stability": "dev",
